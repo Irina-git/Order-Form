@@ -15,10 +15,13 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">-->
 
 
   <meta name="theme-color" content="#fafafa">
@@ -38,25 +41,40 @@
       </div>
       <div class="intro_form">
         <div class="intro_title">
-          <h1>Сделай шаг
-            к выздоровлению</h1>
+          <h1>Сделай шаг <br>к выздоровлению</h1>
+        </div>
           <div class="intro_info">
             <form name="test" method="post" >
-              <p>Ваше имя:<br>
-                <input type="text" size="40">
+              <p class="yourName">Ваше <span>имя</span><br>
+                <input class="name" type="text" size="40" placeholder="Алексей">
               </p>
-              <p>Ваш телефон:<br>
-                <input type="tel" size="40">
+              <div class="teleph">
+              <p class="yourTel" >Ваш <span>телефон</span><br>
+                <input class="tel" type="tel" size="40" placeholder="+7 (123) 456 78-90">
               </p>
-              <select name="country">
-                <option value="RU">RU</option>
-                <option value="EN">EN</option>
-              </select>
-              <button class="btn btn-primary" type="submit">Заказать</button>
+                <select class="vodiapicker">
+                  <option value="ru" class="test" data-thumbnail="https://">RU</option>
+                  <option value="en" data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/NYCS-bull-trans-B.svg/480px-NYCS-bull-trans-B.svg.png">Engllish (AU)</option>
+                  </select>
+
+                <div class="lang-select">
+                  <button class="btn-select" value=""></button>
+                  <div class="b">
+                    <ul id="a"></ul>
+                  </div>
+                </div>
+              <!--<select name="country" id="demo-htmlselect">-->
+                <!--<option class="ru" value="RU">RU</option>-->
+                <!--<option value="EN">EN</option>-->
+              <!--</select>-->
+              </div>
+              <button class="btn btn-primary" type="submit">Заказать
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </button>
 
             </form>
           </div>
-        </div>
+
       </div>
     </div>
 
@@ -73,11 +91,10 @@
 
 
 
-
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
