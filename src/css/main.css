@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #212121;
+
+}
+
+* ,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/*Container*/
+
+.container{
+    width: 100%;
+    max-width:1280px;
+    margin: 0 auto;
+    padding: 75px 80px;
+}
+
+/*Intro*/
+
+.intro_content{
+    display: flex;
+}
+.intro_img{
+    width: 560px;
+    height: 500px;
+    background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+}
+
+.ellipse{
+    position: absolute;
+    left: 100px;
+    top: 146px;
+
+}
+
+.meds{
+    position: fixed;
+    left: 137px;
+    top: 287px;
+}
+
+.redulism{
+    position: absolute;
+    width: 89px;
+    height: 23px;
+    left: 120px;
+    top: 115px;
+
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+
+    /* white */
+
+    color: #FFFFFF;
+
+}
+
+.eco{
+    position: absolute;
+    width: 41px;
+    height: 23px;
+    left: 120px;
+    top: 517px;
+
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+.ellipse_back{
+    position: absolute;
+    width: 688px;
+    height: 688px;
+    left: 315px;
+    top: -19px;
+
+    opacity: 0.03;
+    /* white */
+
+    border: 20px solid #FFFFFF;
+    box-sizing: border-box;
+}
