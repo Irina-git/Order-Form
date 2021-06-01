@@ -1,7 +1,8 @@
-$(document).ready(function(e) {
-    try {
-        $("body select").msDropDown();
-    } catch(e) {
-        alert(e.message);
+$("#slick").ddslick({
+    width:"100%",
+    imagePosition: "left",
+    selectText:"select language",
+    onSelected: function (data) {
+        $("#selected").html(data.selectedData.value)
     }
-});
+})
